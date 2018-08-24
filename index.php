@@ -3,13 +3,11 @@ session_start();
 require "./config.php";
 
 if (isset($_SESSION['login']) && empty($_SESSION['login']) == false):
-    echo "Login Efetuado com sucesso";
+    echo "<h1>Welcome</h1>";
 else:
     header('Location: login.php');
 endif;
 ?>
-
-
 
 <?php
 try {
